@@ -16,19 +16,32 @@
             <div class="outer-circle">
                 <div class="inner-circle"></div>
             </div>
-            <span class="title-text">bagel layout demo</span>
+            <span class="title-text">bagel</span>
+
         </div>
         <div class="content-wrapper">
+
             <div class="main-view shadow">
                 <div class="vert-flex">
-                    <div class="mode-view shadow">
-                        <div>Bagel Tossups (OFFLINE)</div>
+                    <div class="mode-view shadow only-mobile">
+                        <div class="flex-space">
+                            <button class="play-controls-unpressed"><i class="fa fa-gear"></i> SETTINGS</button>
+                            <button class="play-controls-pressed"><i class="fa fa-play"></i> PLAY</button>
+                            <button class="play-controls-unpressed"><i class="fa fa-forward"></i> NEXT</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mode-view shadow only-desktop flex-left-right">
+                        Bagel Tossups (OFFLINE)
                         <div>
                             <button class="play-controls-pressed"><i class="fa fa-play"></i></button>
                             <button class="play-controls-unpressed"><i class="fa fa-forward"></i></button>
                             <button class="play-controls-unpressed"><i class="fa fa-bell"></i> BUZZ</button>
                         </div>
                     </div>
+
                     <div class="question-view-bg qbg-unlit">
                         <div class="question-view">
                             <div class="parameter-header shadow">Tossup 1 - Geography American</div>
@@ -36,8 +49,13 @@
                         </div>
                     </div>
                     <div class="answer-box-bg qbg-unlit">
-                        <div class="answer-box">
-                            <input type="text" class="answer-box-input" placeholder="Answer">
+                        <div class="answer-box disabled">
+                            <input type="text" class="answer-box-input-disabled" placeholder="Answer">
+                            <div id="tb-buzz-container">
+                                <button id="textbox-buzz"><i class="fa fa-bell"></i> BUZZ</button>
+                            </div>
+
+
                         </div>
 
                     </div>
@@ -105,34 +123,19 @@
                     </div>
                 </div>
             </div>
-            <div class="side-view shadow">
+            <div class="side-view shadow only-desktop">
 
                 <div class="options-view">
                     <div class="mode-view shadow">
-                        PK Options
+                        Room Settings
                     </div>
                     <div class="options-box-large small-shadow">
                         <div class="vert-flex">
-                            <div class="option-header small-shadow">
-                                Params
+                            <div class="option-header small-shadow flex-left-right">
+                                Params <button id="param-button"><i class="fa fa-pencil"></i> EDIT</button>
                             </div>
                             <div class="parameter-box small-shadow" style="flex-grow: 3">
-                                Add parameter:
-                            </div>
-                            <div class="parameter-box small-shadow" style="flex-grow: 2">
-                                Parameter list:
-
-                                <div class="vert-flex">
-                                    <ul class="param-list">
-                                        <li>
-                                            <div class="parameter-entry">
-                                                Difficulty 3 | Geography (American)  x
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
+                                Room Options
                             </div>
                         </div>
 
@@ -140,8 +143,9 @@
                     <div class="options-box-small small-shadow">
                         <div class="vert-flex">
                             <div class="option-header small-shadow">
-                                Options
+                                Multiplayer options
                             </div>
+                            <button id="cr-button"><i class="fa fa-pencil"></i> CREATE ONLINE ROOM</button>
                         </div>
 
                     </div>
