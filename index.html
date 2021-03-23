@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
 
 
@@ -10,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-    <div class="main-wrapper">
+    <div class="main-wrapper" style="font-family: Roboto">
         <div class="nav-bar shadow">
             <div class="outer-circle">
                 <div class="inner-circle"></div>
@@ -19,25 +20,89 @@
         </div>
         <div class="content-wrapper">
             <div class="main-view shadow">
-                <div class="mode-view shadow">
-                    <div>Bagel Tossups (OFFLINE)</div>
-                    <div>
-                        <button class="play-controls-pressed"><i class="fa fa-play"></i></button>
-                        <button class="play-controls-unpressed"><i class="fa fa-forward"></i></button>
-                        <button class="play-controls-unpressed"><i class="fa fa-bell"></i> BUZZ</button>
+                <div class="vert-flex">
+                    <div class="mode-view shadow">
+                        <div>Bagel Tossups (OFFLINE)</div>
+                        <div>
+                            <button class="play-controls-pressed"><i class="fa fa-play"></i></button>
+                            <button class="play-controls-unpressed"><i class="fa fa-forward"></i></button>
+                            <button class="play-controls-unpressed"><i class="fa fa-bell"></i> BUZZ</button>
+                        </div>
                     </div>
-                </div>
-                <div class="question-view-bg qbg-unlit">
-                    <div class="question-view">
-                        <div class="parameter-header shadow">Tossup 1 - Geography American</div>
-                        Soldiers adhering to this religion prayed to a goddess of light and the sun named Marici before battles.People float paper lanterns down a river at the culmination of a three-day summer festival in this religionfor honoring ancestors, called Obon. Atop Mount Hiei, many members of this religion's clergy trained forcombat. Two esoteric schools of this religion, introduced by Kukai and Saicho, were respectively known as(*)) Shingon and Tendai. Practitioners of one form of this religion strive to attain an initial insight known as kensho,or satori, and practice the contemplation of statements and questions known as koans. For 10 points, name thisreligion which has blended heavily with Shinto in Japan, where the "Zen" type is particularly popular.
+                    <div class="question-view-bg qbg-unlit">
+                        <div class="question-view">
+                            <div class="parameter-header shadow">Tossup 1 - Geography American</div>
+                            Soldiers adhering to this religion prayed to a goddess of light and the sun named Marici before battles.People float paper lanterns down a river at the culmination of a three-day summer festival in this religionfor honoring ancestors, called Obon. Atop Mount Hiei, many members of this religion's clergy trained forcombat. Two esoteric schools of this religion, introduced by Kukai and Saicho, were respectively known as(*)) Shingon and Tendai. Practitioners of one form of this religion strive to attain an initial insight known as kensho,or satori, and practice the contemplation of statements and questions known as koans. For 10 points, name thisreligion which has blended heavily with Shinto in Japan, where the "Zen" type is particularly popular.
+                        </div>
                     </div>
-                </div>
-                <div class="answer-box-bg qbg-unlit">
-                    <div class="answer-box">
-                        <input type="text" class="answer-box-input" placeholder="Answer">
-                    </div>
+                    <div class="answer-box-bg qbg-unlit">
+                        <div class="answer-box">
+                            <input type="text" class="answer-box-input" placeholder="Answer">
+                        </div>
 
+                    </div>
+                    <div class="log-bg qbg-unlit">
+                        <div class="log-list">
+                            <ul class="log-ul">
+
+                                <li>
+                                    <div class="answer-box-bg qbg-yellow">
+                                        <div class="answer-box">
+                                            TOSSUP 3
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="answer-box-bg qbg-power onlyHover">
+                                        <div class="answer-box">
+                                            <i class="fa fa-bolt"></i> Player1 answered correctly with "good buzz".
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="answer-box-bg qbg-yellow onlyHover">
+                                        <div class="answer-box">
+                                            TOSSUP 2
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="answer-box-bg qbg-green onlyHover">
+                                        <div class="answer-box">
+                                            <i class="fa fa-check"></i> Player2 answered correctly with "Correct_Answer".
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="answer-box-bg qbg-red onlyHover">
+                                        <div class="answer-box">
+                                            <i class="fa fa-times"></i>  Player1 answered incorrectly with "hello world".
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="answer-box-bg qbg-yellow onlyHover">
+                                        <div class="answer-box">
+                                            TOSSUP 1
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="answer-box-bg qbg-focus onlyHover">
+                                        <div class="answer-box">
+                                            This is the beginning of the game log.
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="side-view shadow">

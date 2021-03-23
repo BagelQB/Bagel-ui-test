@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
 body {
     background-color: #141d26;
-    font-family: Comfortaa;
     height: 100%;
 }
 
@@ -43,7 +43,7 @@ html, body {
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
-
+    font-family: Comfortaa;
     color: #c51f5d;
     font-size: 40px;
     height: 50px;
@@ -78,7 +78,33 @@ html, body {
     color: white;
     order: 0;
     flex: 4;
+}
 
+.log-bg {
+    padding: 2px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    flex-grow: 2;
+    min-height: 0;
+    display: flex;
+}
+
+.log-list {
+    font-weight: lighter;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #141d26;
+    flex-grow: 2;
+    display: flex;
+}
+
+.log-ul {
+    overflow-y: scroll;
+    list-style: none;
+    width: 100%;
+    padding-left: 0px;
 }
 
 .side-view {
@@ -167,6 +193,28 @@ html, body {
     background-size: 300% 300%;
 }
 
+.qbg-focus {
+    background: linear-gradient(60deg, #141d26, #c51f5d,  #7d1e46, #141d26);
+    animation: animatedgradient 5s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.qbg-power {
+    background: linear-gradient(60deg, #c51f5d, #d4af37, #c51f5d);
+    animation: animatedgradient 5s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.onlyHover {
+    background-clip: text;
+}
+
+.onlyHover:hover {
+    background-clip: border-box;
+}
+
+
+
 .qbg-unlit {
     background-color: #0a131c;
 }
@@ -228,6 +276,7 @@ html, body {
     transition: 0.5s;
 }
 
+
 @keyframes animatedgradient {
     0% {
         background-position: 0% 50%;
@@ -266,7 +315,9 @@ html, body {
     display: flex;
     flex-flow: column nowrap;
     height: 100%;
+    min-height: 0;
 }
+
 
 .option-header {
     background-color: #343d46;
