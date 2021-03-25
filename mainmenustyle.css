@@ -3,6 +3,7 @@ body {
     background-color: #141d26;
     overflow: hidden;
     text-align: center;
+    font-family: Comfortaa, sans-serif;
 }
 
 html {
@@ -68,6 +69,7 @@ html {
     background-image: linear-gradient(90deg, #141d26 20%, #c51f5d, #b50f4d 50%, #b50f4d 100%);
     background-size: 500% 500%;
     animation: animatedgradient 3s forwards;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -125,20 +127,20 @@ html {
 .play-button {
     background-color: #141d26;
     font-family: Comfortaa;
-    font-size: 52px;
-    margin-top: 50px;
-    border: none;
+    font-size: 2.5em;
+    margin: 10px;
+    border: 4px solid #c51f5d;
     color: #c51f5d;
     transition: 0.2s;
-    padding: 30px;
+    padding: 10px 30px 10px 30px;
 
-    border-radius: 20px;
+    border-radius: 1em;
 }
 
 .play-button:hover {
-    background-color: #343d46;
+    background-color: #362028;
     cursor: pointer;
-    color: #e53f7d;
+    color: white;
 
 }
 
@@ -149,3 +151,31 @@ html {
     align-items: center;
     justify-content: center;
 }
+
+.sign-in{
+    margin-top: 50px;
+    color: #c51f5d;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button{
+    background-color: #141d26;
+    border: 3px solid #c51f5d;
+    color: #c51f5d;
+    transition: 0.2s;
+    padding: 10px 30px 10px 30px;
+    border-radius: 2em;
+    height: 50px;
+    align-self: center;
+    margin: 5px;
+}
+
+.login-button:hover {
+    background-color: #362028;
+    cursor: pointer;
+    color: white;
+}
+
+.icon-size{font-size: 20px !important;}
